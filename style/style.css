@@ -138,6 +138,8 @@ header {
 
 ::placeholder {
   text-align: center;
+  color: var(--secondary-color);
+  opacity: 1;
 }
 
 .track button {
