@@ -20,7 +20,7 @@
 
 .container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background: linear-gradient(
       to top,
       rgba(34, 102, 141, 0.829),
@@ -28,7 +28,7 @@
     ),
     url("../images/delivery-background.jpg") no-repeat top center fixed;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 header {
@@ -253,6 +253,18 @@ header {
 .slider .dots li.active {
   width: 30px;
 }
+
+/* <--About Us Page--> */
+.about {
+  height: 100vh;
+  margin: 15% 50px 0 50px;
+}
+
+.about-heading {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .slider {
     height: 400px;
@@ -301,5 +313,104 @@ header {
   }
   .navbar.open {
     top: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .slider {
+    margin-top: 30px;
+  }
+  .slider .list .item {
+    flex-direction: column;
+    height: 70%;
+  }
+  .slider .list .item-content .delivery-da,
+  .slider .list .item-content .delivery {
+    width: 400px;
+  }
+  .slider .list .item .dy-content,
+  .slider .list .item .dy-content-rt {
+    width: 500px;
+    margin-top: 25px;
+  }
+  .slider .list .item .dy-content,
+  .slider .list .item .dy-content-rt {
+    left: 0;
+  }
+
+  .tracking {
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 968px) and (min-width: 769px) {
+  .tracking {
+    margin-top: -30px;
+    flex-direction: column;
+  }
+
+  .track {
+    width: 600px;
+    padding: 0;
+  }
+  .track button {
+    height: 30px;
+    margin-right: 10px;
+  }
+  .trackit {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 600px;
+  }
+  .slider .list .item .dy-content,
+  .slider .list .item .dy-content-rt {
+    left: 0;
+  }
+  .slider .list .item .dy-content h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .slider .list .item .dy-content p {
+    text-align: center;
+  }
+  .slider .list .item .dy-content,
+  .slider .list .item .dy-content-rt {
+    width: 300px;
+  }
+  .slider .list .item-content .delivery-da,
+  .slider .list .item-content .delivery {
+    width: 250px;
+  }
+
+  .tracking {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .trackit {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .track {
+    width: 300px;
+    padding: 0;
+  }
+
+  .track input {
+    padding-right: -10px;
+    font-size: 13px;
+  }
+  .track button {
+    height: 25px;
+    font-size: 13px;
+    margin-left: -50px;
+    margin-right: 10px;
   }
 }
